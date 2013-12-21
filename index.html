@@ -62,43 +62,11 @@
 			}*/
 		})()
 
-
-		var mvcPage = (function () {
-                 var controller = {
-                 	validateForm: function(){
-						console.log("clicked!");
-                 	}
-
-                 }; //define all contoller actions
-                 var view = {
-                 	start: function(){
-                 		view.uName = document.getElementById("uname")
-                 	}
-                 }; 
-                 //define all view properties and actions
-                 var model = {}; //define models
-                 
-                  function bindEvents(){
-                 		// elem.addEventListener("click", function(){
-                 		// 	console.log(this.id);
-                 		// })
-						view.uName.addEventListener("click", controller.validateForm);
-                 }
-              return {
-                  initialize: function () {
-                  	console.log(view);
-                  	view.start();
-                  	bindEvents();
-                  } //only method accessible outside
-               }
-       });
-
-		window.onload = function(){
-		mvcPage().initialize();//
-	}
+	
 		// console.log(mvcPage());//
 	</script>
 <style>
+	
 	label{
 		display: block;
 	}
