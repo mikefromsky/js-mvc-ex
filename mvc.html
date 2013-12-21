@@ -17,17 +17,21 @@
 	input,button:focus{
 		outline: none;
 	}
+    button:enabled{
+        border: 2px solid black
+    }
 </style>
 </head>
 <body> <h1>MVC Experiment</h1>
 	<div id="textfield"></div>
 	<div style="margin:0 auto;width:300px">
+        <form id="comment-form" action="">
 		<label for="uname">Name</label><input class="in name" id="uname" name="username" type="text" >
-		<label for="email">e-mail</label><input class="in email" name="" type="text" >
+		<label for="email">e-mail</label><input class="in email" id="email" name="" type="text" >
 		<!-- <label for="comment">Comment</label><input name="" type="text" > -->
-		<label for="comment">Comment</label><textarea name="" type="text" ></textarea>
-		<button id="bu">Send</button>
-
+		<label for="comment">Comment</label><textarea id="comment" name="" type="text" ></textarea>
+		<button id="go" type="button">Send</button>
+        </form>
 	</div>
 	
 </body>
